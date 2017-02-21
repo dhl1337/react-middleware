@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {connect} from 'redux';
+import {connect} from 'react-redux';
 import * as actions from '../actions';
 
 class UserList extends Component {
@@ -19,7 +19,7 @@ class UserList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="user-list">
         {this.props.users.map(this.renderUser)}
       </div>
     );
